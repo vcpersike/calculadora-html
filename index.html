@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Teste Mentes Notáveis</h1>
+        <h2>Victor Persike</h2>
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <input id="resultado" placeholder="0" readonly>
+            <div>
+                <div class="teclado-começo">
+                    <div><button class="botao" onclick="clean()">C</button></div>
+                    <div><button class="botao" onclick="back()"><img src="https://img.icons8.com/android/24/000000/clear-symbol.png"/></button></div>
+                    <div><button class="botao" onclick="insert('/')"><img src="https://img.icons8.com/windows/32/000000/divide.png"/></button></div>
+                </div>
+                <div class="teclado">
+                    <div><button class="botao" onclick="insert('7')">7</button></div>
+                    <div><button class="botao" onclick="insert('8')">8</button></div>
+                    <div><button class="botao" onclick="insert('9')">9</button></div>
+                    <div><button class="botao" onclick="insert('*')">X</button></div>
+                </div>
+                <div class="teclado">
+                    <div><button class="botao" onclick="insert('4')">4</button></div>
+                    <div><button class="botao" onclick="insert('5')">5</button></div>
+                    <div><button class="botao" onclick="insert('6')">6</button></div>
+                    <div><button class="botao" onclick="insert('-')">-</button></div>
+                </div>
+                <div class="teclado">
+                    <div><button class="botao" onclick="insert('1')">1</button></div>
+                    <div><button class="botao" onclick="insert('2')">2</button></div>
+                    <div><button class="botao" onclick="insert('3')">3</button></div>
+                    <div><button class="botao" onclick="insert('+')">+</button></div>
+                </div>
+                <div class="teclado-final">
+                    <div colspan="2" class="botao-0"><button class="botao" onclick="insert('0')">0</button></div>
+                    <div rowspan="2"><button class="botao"  onclick="calcular()">=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
